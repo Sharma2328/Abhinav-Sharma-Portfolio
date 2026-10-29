@@ -6,66 +6,39 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
+  /* Charcoal Black + Forest Green + Crimson Red.
+     :root and .dark share one palette so the theme is consistent in any mode. */
+  :root,
+  .dark {
+    --background: 0 0% 9%;            /* charcoal black */
+    --foreground: 0 0% 96%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 14%;                 /* charcoal surface */
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 14%;
+    --popover-foreground: 0 0% 96%;
 
-    --primary: 221.2 83% 53.9%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 123 46% 34%;           /* forest green */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 18%;            /* charcoal */
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 63%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 0% 20%;              /* charcoal hover surface */
+    --accent-foreground: 0 0% 96%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 348 83% 47%;       /* crimson red */
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83% 53.9%;
+    --border: 0 0% 22%;
+    --input: 0 0% 22%;
+    --ring: 123 46% 34%;             /* forest green */
 
     --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
   }
 }
 
@@ -86,6 +59,10 @@
 @layer components {
   .btn-primary {
     @apply bg-portfolio-accent text-white px-6 py-3 rounded-md font-medium transition-all hover:bg-portfolio-accent-hover shadow-md hover:shadow-lg;
+  }
+
+  .btn-crimson {
+    @apply bg-portfolio-crimson text-white px-6 py-3 rounded-md font-medium transition-all hover:bg-portfolio-crimson-hover shadow-md hover:shadow-lg;
   }
   
   .section-container {

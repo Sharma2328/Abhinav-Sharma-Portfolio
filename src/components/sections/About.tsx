@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white dark:bg-gray-900">
+    <section id="about" className="py-24 bg-white dark:bg-portfolio-blue">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-portfolio-accent font-medium mb-3">About Me</h2>
@@ -41,7 +41,7 @@ export default function About() {
           ].map((item, index) => (
             <Card key={index} className="card-hover">
               <CardContent className="flex flex-col items-center text-center p-6">
-                <div className="mb-4 p-3 bg-blue-50 rounded-full dark:bg-portfolio-blue-light">
+                <div className="mb-4 p-3 bg-portfolio-surface rounded-full dark:bg-portfolio-surface">
                   {item.icon}
                 </div>
                 <h4 className="text-xl font-bold mb-2">{item.title}</h4>

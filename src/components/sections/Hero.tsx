@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-portfolio-accent/10 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-purple-500/10 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-portfolio-crimson/25 rounded-full filter blur-3xl"></div>
       </div>
       
       <div className="section-container relative z-10">
@@ -52,12 +52,12 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-portfolio-accent/20 blur-2xl rounded-full"></div>
               <div className="relative bg-portfolio-blue-light border border-white/10 p-4 rounded-2xl shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Coding Illustration" 
+                <img
+                  src="/abhinav-portrait.png"
+                  alt="Abhinav S. Sharma"
                   className="w-full h-auto rounded-lg"
                   width={500}
-                  height={400}
+                  height={625}
                 />
               </div>
             </div>

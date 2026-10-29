@@ -63,13 +63,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom portfolio colors
-				'portfolio-blue': '#0f172a',
-				'portfolio-blue-light': '#1e293b',
-				'portfolio-accent': '#3b82f6',
-				'portfolio-accent-hover': '#2563eb',
-				'portfolio-text': '#f8fafc',
-				'portfolio-muted': '#94a3b8',
+				// Custom portfolio colors — Charcoal Black + Forest Green + Crimson Red
+				'portfolio-blue': '#161616',          // charcoal black (base)
+				'portfolio-blue-light': '#232323',    // charcoal surface
+				'portfolio-surface': '#2e2e2e',       // elevated charcoal
+				'portfolio-accent': '#2e7d32',        // forest green (primary accent)
+				'portfolio-accent-hover': '#246428',  // forest green (hover)
+				'portfolio-crimson': '#dc143c',       // crimson red (secondary accent)
+				'portfolio-crimson-hover': '#b21030', // crimson red (hover)
+				'portfolio-text': '#f5f5f5',          // near-white text
+				'portfolio-muted': '#a0a0a0',         // muted gray text
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

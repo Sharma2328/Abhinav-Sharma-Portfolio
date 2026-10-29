@@ -48,7 +48,7 @@ export default function Education() {
                 <Card key={index} className="card-hover">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="p-3 bg-blue-50 rounded-full dark:bg-portfolio-blue-light">
+                      <div className="p-3 bg-portfolio-surface rounded-full dark:bg-portfolio-surface">
                         <GraduationCap className="h-6 w-6 text-portfolio-accent" />
                       </div>
                       <div>

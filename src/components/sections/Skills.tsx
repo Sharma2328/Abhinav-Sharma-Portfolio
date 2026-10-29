@@ -27,7 +27,7 @@ export default function Skills() {
     <section id="skills" className="py-24 bg-gray-50 dark:bg-portfolio-blue">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-portfolio-accent font-medium mb-3">My Skills</h2>
+          <h2 className="text-portfolio-crimson font-medium mb-3">My Skills</h2>
           <h3 className="text-3xl md:text-4xl font-bold font-serif mb-6">
             Technical Expertise & Proficiency
           </h3>
@@ -47,9 +47,9 @@ export default function Skills() {
                 <h4 className="font-medium text-lg">{skill.name}</h4>
                 <span className="text-sm text-gray-500 dark:text-gray-400">{progressValues[index]}%</span>
               </div>
-              <Progress 
-                value={progressValues[index]} 
-                className="h-2 transition-all duration-1000 ease-out"
+              <Progress
+                value={progressValues[index]}
+                className="h-2 transition-all duration-1000 ease-out [&>div]:bg-portfolio-crimson"
               />
             </div>
           ))}

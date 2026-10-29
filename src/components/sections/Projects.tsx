@@ -5,10 +5,32 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 // Project categories
-const categories = ["All", "Web App", "Full Stack", "UI/UX"];
+const categories = ["All", "Desktop App", "Backend", "Web App", "Full Stack", "UI/UX"];
 
 // Project data
 const projects = [
+  {
+    id: 4,
+    title: "Offline AI Assistant",
+    category: "Desktop App",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2032&auto=format&fit=crop",
+    description: "A privacy-first macOS (Apple Silicon) desktop app for local chat, document Q&A, and repeatable model benchmarks. Runs entirely offline with a bundled llama.cpp runtime — no cloud inference and no model downloads at runtime.",
+    technologies: ["Tauri 2", "Rust", "React", "TypeScript", "SQLite", "llama.cpp"],
+    github: "https://github.com/Sharma2328/offline-ai-assistant",
+    liveDemo: "https://github.com/Sharma2328/offline-ai-assistant",
+    date: "Sep 2026"
+  },
+  {
+    id: 5,
+    title: "Slack PR Tracker",
+    category: "Backend",
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2089&auto=format&fit=crop",
+    description: "An event-driven service that records PR workflow submissions from Slack into a private, threaded tracker. Maintains monthly pages, PR detail/history, and revisions in SQLite — with zero runtime npm dependencies.",
+    technologies: ["Node.js 24", "TypeScript", "SQLite", "Slack API", "Docker"],
+    github: "https://github.com/Sharma2328/slack-pr-tracker",
+    liveDemo: "https://github.com/Sharma2328/slack-pr-tracker",
+    date: "June 2026"
+  },
   {
     id: 1,
     title: "Square & Circle (Interior Design)",
@@ -52,10 +74,10 @@ export default function Projects() {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section id="projects" className="py-24 bg-white dark:bg-gray-900">
+    <section id="projects" className="py-24 bg-white dark:bg-portfolio-blue">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-portfolio-accent font-medium mb-3">My Work</h2>
+          <h2 className="text-portfolio-crimson font-medium mb-3">My Work</h2>
           <h3 className="text-3xl md:text-4xl font-bold font-serif mb-6">
             Featured Projects
           </h3>
@@ -71,7 +93,7 @@ export default function Projects() {
             <Button
               key={category}
               variant={activeCategory === category ? "default" : "outline"}
-              className={activeCategory === category ? "bg-portfolio-accent" : ""}
+              className={activeCategory === category ? "bg-portfolio-crimson hover:bg-portfolio-crimson-hover text-white" : ""}
               onClick={() => setActiveCategory(category)}
             >
               {category}

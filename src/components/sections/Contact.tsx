@@ -67,7 +67,7 @@ export default function Contact() {
     <section id="contact" className="py-24 bg-gray-50 dark:bg-portfolio-blue">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-portfolio-accent font-medium mb-3">Get In Touch</h2>
+          <h2 className="text-portfolio-crimson font-medium mb-3">Get In Touch</h2>
           <h3 className="text-3xl md:text-4xl font-bold font-serif mb-6">
             Let's Work Together
           </h3>
@@ -189,7 +189,7 @@ export default function Contact() {
 
               <Button 
                 type="submit" 
-                className="w-full btn-primary"
+                className="w-full btn-crimson"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
